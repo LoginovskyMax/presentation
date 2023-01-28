@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="wheat" >
+					One of the hardest problems to solve in large frontend applications is state management.
+				</section>
+				<section data-background="#b5533c">
+					<section>
+						<div style="display: flex; flex-direction: column; gap: 30px; align-items: center;
+						justify-content: center;">
+							What is <strong>Redux?</strong>
+							<img src="assets/redux.png" width="200">
+						</div>
+						
+					</section>
+					<section>
+						<ul>
+							<li>Redux has a single store, which provides a single source of truth</li>
+							<li>The state in the store is immutable</li>
+							<li>Actions invoke changes to the store</li>
+							<li>Reducers update state</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<section>
+						<div style="display: flex; flex-direction: column; gap: 30px; align-items: center;
+						justify-content: center;">
+						What is <strong>MobX?</strong>
+						<img src="assets/mobx.jfif" alt="" width="200">
+						</div>
+					</section>
+					<section>
+						<ul>
+							<li>MobX can have multiple stores that store the state of an application</li>
+							<li>Anything derived from the state without any further interaction is a derivation</li>
+							<li>Actions are any piece of code that changes the state</li>
+							<li>All derivations update automatically and atomically when the state changes</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, wheat, violet)">
+					<section >
+						<div style="
+						color:black; font-weight:bold">
+							Redux and MobX learning curve
+						</div>
+					</section>
+					<section>
+						<div style="
+						color:black; font-weight:bold">
+						<p>The popular opinion that developers have about Redux is that it is not easy to learn.</p>
+						<p>Also, there are a lot of things that are done behind the scenes in MobX, <br>
+							creating a better learning experience for the developers. </p>
+						</div>
+					</section>
+			    </section>
+				<section data-background-gradient="linear-gradient(to bottom, wheat, violet)">
+					Curve winner<br>
+                    MobX wins for its easier learning experience.
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					<section>
+						<div style="display: flex; flex-direction: column; gap: 30px; align-items: center;
+						justify-content: center;">
+						Why does <strong>Redux</strong> only have one store?
+						<img src="assets/reduxstore.png" alt="" width="500">
+					</div>
+						
+					</section>
+
+					<section>In Redux, there is only one store, and it is the single source of truth. <br>
+						The state in the store is immutable, <br>
+						which makes it easier for us to know where to find the data/state.</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					<section>
+						<div style="display: flex; flex-direction: column; gap: 30px; align-items: center;
+						justify-content: center;">
+						<strong>MobX</strong> multiple stores
+						<img src="assets/store.png" alt="" width="500">
+					</div>
+						
+					</section>
+					<section>MobX, however, allows multiple stores.<br>
+						 You can logically separate stores so all of the application’s state is not in one store. 
+					</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<strong>Storing data winner</strong><br>
+					Subjective
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<section><strong>Redux</strong> and <strong>MobX</strong> data structure</section>
+					<div style="display: flex; flex-direction: column; gap: 30px; align-items: center;
+						justify-content: center;"><img src="assets/redux-scheme.png" alt="" width="500"></div>
+					<section>
+						<p>Redux, updates must be tracked manually. </p>
+						<p>MobX uses observable data, which helps automatically track changes </p>
+					</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					<strong>Data structure winner</strong><br>
+                    <strong>MobX</strong> wins for automatically tracking updates.
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					Pure vs. impure functions
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<strong>Pure vs. impure functions winner</strong><br>
+					<p>Since the Redux store is pure, it is more predictable and easier to revert state updates.</p>	
+					<p>In the case of MobX, if not done right, the state updates can make it harder to debug.</p>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<strong>Redux</strong> and <strong>MobX</strong> boilerplate code
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					<div style="display: flex; flex-direction: column; gap: 30px; align-items: center;
+						justify-content: center;">
+                           <strong>Boilerplate code winner</strong><br>
+                           With its easy setup and learning curve, MobX’s boilerplate code takes the win.
+						<img src="assets/mobx-sheme.png" alt="" width="500">
+					</div>
+					
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					<strong>Redux</strong> and <strong>MobX</strong> scalability
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<strong>Scalability winner</strong><br>
+                    Redux comes in with its opinionated and pure nature to cinch the scalability win.
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					<section>Conclusion</section>
+					<section>Alright, what’s the verdict? Based on the developer community, popularity, and scalability, <br>
+						Redux performs better than MobX. But if you’re looking to get up to speed quickly and build simple apps with less boilerplate code,<br>
+						 MobX might be your best bet.
+					</section>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #d33682, #cb4b16)">
+					Thanks for watching
+				</section>
+			</div>
+		</div>
+		<!-- <pre><code data-line-numbers="3-5|8-10|13-15"> -->
+		<!-- <table>
+				<pre><code data-trim data-noescape>
+				  (def lazy-fib
+					(concat
+					 [0 1]
+					 ((fn rfib [a b]
+						  (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+					</code></pre>
+			<tr>
+			  <td>Apples</td>
+			  <td>$1</td>
+			  <td>7</td>
+			</tr>
+			<tr>
+			  <td>Oranges</td>
+			  <td>$2</td>
+			  <td>18</td>
+			</tr>
+			<tr>
+			  <td>Kiwi</td>
+			  <td>$3</td>
+			  <td>1</td>
+			</tr>
+		  </table>
+		  </code></pre> -->
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
